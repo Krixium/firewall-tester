@@ -1,5 +1,5 @@
 #!/bin/sh
-cmd="hping -c 1"
+cmd="hping3 -c 1"
 from_host="192.168.0.75"
 to_host="127.0.0.1"
 
