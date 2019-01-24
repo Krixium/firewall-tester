@@ -18,8 +18,8 @@ Pass or Fail
 Pass
 
 Proof:
-
-tcpdump: logs/inbound-ssh.pcap
+log: logs/inbound-ssh.log
+tcpdump: dump/inbound-ssh.pcap
 
 
 
@@ -42,7 +42,7 @@ Pass or Fail
 Pass
 
 Proof:
-
+log: log/outbound-ssh.log
 tcpdump: logs/outbound-ssh.pcap
 
 
@@ -66,8 +66,8 @@ Pass or Fail
 Pass
 
 Proof:
-
-tcpdump: logs/inbound-http.pcap
+logs: logs/inbound-http.log
+tcpdump: dumps/inbound-http.pcap
 
 
 
@@ -90,7 +90,7 @@ Pass or Fail
 Pass
 
 Proof:
-
+log: logs/outbound-http.log
 tcpdump: logs/outbound-http.pcap
 
 
@@ -114,8 +114,8 @@ Pass or Fail
 Pass
 
 Proof:
-
-tcpdump: logs/inbound-http-with-strange-source-port.pcap
+log: logs/inbound-http-with-strange-source-port.log
+tcpdump: dumps/inbound-http-with-strange-source-port.pcap
 
 
 
@@ -138,8 +138,8 @@ Pass or Fail
 Pass
 
 Proof:
-
-tcpdump: logs/inbound-to-reserved-port-0.pcap
+log: logs/inbound-to-reserved-port-0.log
+tcpdump: dumps/inbound-to-reserved-port-0.pcap
 
 
 
@@ -162,8 +162,8 @@ Pass or Fail
 Pass
 
 Proof:
-
-tcpdump: logs/outbound-to-reserved-port-0.pcap
+log: logs/outbound-to-reserved-port-0.log
+tcpdump: dumps/outbound-to-reserved-port-0.pcap
 
 
 

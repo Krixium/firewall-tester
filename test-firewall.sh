@@ -29,8 +29,8 @@ do
     test_tool=$(echo $line | awk -F',' '{ print $4 }')
     test_exp_result=$(echo $line | awk -F',' '{ print $5 }')
     test_script=$(echo $line | awk -F',' '{ print $6 }')
-    test_logs="logs: logs/$test_name.log"
-    test_dump="tcpdump: logs/$test_name.pcap"
+    test_logs="log: logs/$test_name.log"
+    test_dump="tcpdump: dumps/$test_name.pcap"
 
     clear
     tshark -q -a duration:$capture_duration -f "$filter" -Y $test_filter -w "dumps/$test_name.pcap"&
