@@ -1,7 +1,8 @@
 #!/bin/sh
+from_host=$1
+to_host=$2
+
 cmd="hping3 -c 1"
-from_host="192.168.0.75"
-to_host="127.0.0.1"
 
 for port_num in {0..1023}
 do
